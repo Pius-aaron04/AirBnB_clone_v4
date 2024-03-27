@@ -14,6 +14,7 @@ dj-database-url==2.1.0
 flasgger==0.9.7.1
 Flask==3.0.1
 Flask-Cors==4.0.0
+gunicorn
 #Flutterwave==1.0.7
 html5lib==1.1
 httplib2==0.20.2
