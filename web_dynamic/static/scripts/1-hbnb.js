@@ -1,7 +1,7 @@
 $(document).ready(function () {
   const selectedAmenities = [];
 
-  // listen for changes in the input checkbox
+  // listen for changes in d input checkbox
   $('input[type="checkbox"]').change(function () {
     const amenityId = $(this).data('name');
 
