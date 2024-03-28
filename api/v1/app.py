@@ -28,7 +28,7 @@ def not_found(error):
       404:
         description: a resource was not found
     """
-    return make_response(jsonify({'error': "Not foun"}), 404)
+    return make_response(jsonify({'error': "Not found"}), 404)
 
 app.config['SWAGGER'] = {
     'title': 'AirBnB clone Restful API',
@@ -40,6 +40,10 @@ Swagger(app)
 
 if __name__ == "__main__":
     """ Main Function """
+    host = '0.0.0.0'
+    port = int(environ.get('PORT', 5000))
+
+    """
     host = environ.get('HBNB_API_HOST')
     port = environ.get('HBNB_API_PORT')
     if not host:
@@ -47,7 +51,7 @@ if __name__ == "__main__":
     if not port:
         port = '5000'
     app.run(host=host, port=port, threaded=True)
-
+    """
 
 """
 #!/usr/bin/python3
